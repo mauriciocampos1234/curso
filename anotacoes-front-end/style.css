@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: red;
+}
+
+.btn-add{
+    background: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    height: 60px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container-anotacoes{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.anotacao-single{
+    width: 33.3%;
+    padding: 10px;
+}
+
+.anotacao-single textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background: #ffe499;
+    color: rgb(12, 1, 1);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .anotacao-single{
+        width: 100%;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX & UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><!--MENU DA APLLE-->
+        <div class="container">
+            <div class="logo-desktop"><a href="/index.html"><i class="fa-brands fa-apple"></i></a></div>
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="#">Iphone</a></li>
+                        <li><a href="#">Iphad</a></li>
+                        <li><a href="#">Tablet</a></li>
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Smart</a></li>
+                        <li><a href="#">Developer</a></li>
+                        <li><a href="#">Entreteriment</a></li>
+                        <li><a href="#">Televisão</a></li>
+                        <li><a href="#">Avião</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Cars</a></li>
+                        
+                    </ul>
+                </nav><!--fim nav desktop-->
+                <!--*********************************************-->
+                <nav class="mobile">
+                    <div class="logo-mobile"><a href="/index.html"><i class="fa-brands fa-apple"></i></a></div>
+                    <h3><i class="fa-solid fa-bars"></i></h3>
+                    <ul>
+                        <li><a href="#">Iphone</a></li>
+                        <li><a href="#">Iphad</a></li>
+                        <li><a href="#">Tablet</a></li>
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Smart</a></li>
+                        <li><a href="#">Developer</a></li>
+                        <li><a href="#">Entreteriment</a></li>
+                        <li><a href="#">Televisão</a></li>
+                        <li><a href="#">Avião</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Cars</a></li>
+                    </ul>
+                </nav><!--fim nav mobile-->
+                <div class="clear"></div>            
+        </div><!--fim container-->
+    </header><!--fim header MENU DA APPLE-->
+    <!--############################################################-->
+    
+
+    
+    <!--jquery js-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function() {
+            $('nav.mobile h3').click(function() {
+                $('nav.mobile ul').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

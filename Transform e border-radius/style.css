@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background: black;
+    margin: 50px auto;
+    border-radius: 10px;
+    /*Borda arredondada*/ 
+    /*border-radius: 250px;*/
+    /*Circulo: Minha aulta e largura deve ter o mesmo px e ser divido o valor por 2*/
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>  <!-- É uma instrução que diz ao navegador qual é a especificação do código que está sendo utilizado no documento, e deve ser declarada antes da TAG <html> -->
+<html lang="pt-br"> <!-- *Abre a tag HTML* A TAG html é a principal -->
+<head> <!-- *Abre a tag HEAD* Recebe METADADOS: Conjunto de informações sobre a página e o conteúdo nela publicada. Essas informações são usadas pelos navegadores para mecanismos de buscas -->
+    <meta charset="UTF-8"> <!-- Conjunto de caracteres, por padrão é o "UTF-8"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo do meu website</title> <!-- Título que aparece na aba do navegador -->
+</head> <!-- Fecha a tag HEAD-->
+<body> <!-- *Abre a tag BODY* Corpo-->
+    
+    <h1>Minha primeira página web - H1</h1> <!-- h1 ao h6 São Títulos da página -->
+    <h2>Minha primeira página web - H2</h2>
+    <h3>Minha primeira página web - H3</h3>
+    <h4>Minha primeira página web - H4</h4>
+    <h5>Minha primeira página web - H5</h5>
+    <h6>Minha primeira página web - H6</h6>
+
+    <p>Através desta tag P de paragráfo, digito meus textos</p>
+    <!-- Posso colocar um <br /> para quebra de linha sem espaço abaixo do próximo texto ou paragráfo --> 
+    <p>Se duplicar o p, ficam os textos e paragráfos em bloco</p> 
+
+    <span> É para paragráfos e textos inline, ou , na mesma linha, </span>
+    <!-- Posso colocar um <br /> para quebra de linha sem espaço abaixo do próximo texto ou paragráfo -->
+    <span> Ficam paragráfos e textos inline, na mesma linha</span>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia quo facilis consectetur eum aliquam, placeat veritatis ex quidem cupiditate blanditiis sapiente dolorem beatae. Error neque assumenda deserunt ducimus doloremque?</p>
+    <!-- Usando a tag P, podemos usar LOREM para um texto exemplo grande -->
+
+    <img src="Imagem para aula.jpg" width="300" height="200" /> <!-- Lebrando que tem que salvar a imagem na pasta. Na largura(width), se eu colocar 100% e tirar a altura(height) a imagem ocupa a tela -->
+    <!-- SRC="nome da imagem salva no pc ou link da internet" é um ATRIBUTO. WIDTH="pixel" é um ATRIBUTO para largura. HEIGHT é um ATRIBUTO para altura. -->
+    <img src="https://static.vecteezy.com/ti/fotos-gratis/t2/22653879-fantasia-ilha-com-cachoeiras-3d-ilustracao-elementos-do-isto-imagem-mobiliado-de-nasa-generativo-ai-gratis-foto.jpg"/>
+    <!-- Clicar na imagem no google, com o botão direito do mouse: "Copiar link da imagem"-->
+
+    <br />
+
+    <a target="_blank" href="//google.com">Ir para o site do GOOGLE</a> <!--<a></a> tag para link-->
+    <!-- HREF="url" é um ATRIBUTO para colocar a url--> <!--TARGET="_blank" é um atributo para abrir o link em outra janela-->
+
+    <div> <!--Divisões: Para dividir nosso website através de uma imagem, texto para manter uma organização na marcação-->
+
+        <h2>Título do meu conteúdo</h2>
+        <p>Conteúdo</p>
+
+    </div>
+
+    <!-- As <div> facilitam na hora de estilizar e ter o controle do que estamos fazendo -->
+
+    <div>
+
+        <h2>Título do meu conteúdo</h2>         
+        <p>Conteúdo</p>
+
+    </div>
+
+    <table width="900" align="center" border="1"> <!-- Tabelas--> <!--Posso por um atributo de largura para espaçar as células, posso por um atributo de centralização/alinhamento ALIGN="" e posso por um atributo de borda BORDER=""-->
+        <tr> <!-- Dentro da <table> separamos por linha e colunas usando a tag <tr> que cria uma linha nova -->
+            <!--Posso usar <thead><thead/> e nas células(colunas) <th><th/>-->
+            <td>Nome</td> <!-- <td> cria uma célula (Colunas) nova dentro do <tr> que cria uma linha nova -->
+            <td>Idade</td>
+            <td>Cargo</td>
+        </tr>
+        <!--Posso usar <tbody><tbody/> e manter <td><td/> nas colunas(colunas)-->
+        <tr>
+            <td>Maurício</td>
+            <td>45</td>
+            <td>Programador</td>
+        </tr>
+
+    </table>
+
+    <br />
+
+    <form> <!--Formulários-->
+        <input type="text" /><br /> <!--Atributo para digitar texto no campo-->
+        <input type="password" /><br /> <!--Atributo para senha-->
+        <input type="button" value="Enviar" /> <!--TYPE="button". Atributo para enviar + atributo VALUE="Enviar"-->
+
+    </form>
+
+</body> <!-- *Fecha a tag BODY* Corpo-->
+</html> <!-- Fecha a tag HTML -->

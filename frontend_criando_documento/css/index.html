@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importando estilo para nosso website CSS através de arquivo externo</title>
+    <link href="style.css" rel="stylesheet" />
+    <!-- Usando a tag LINK (Para chamar arquivo de fora), HREF mesmo atributo que usamos para chamar links, coloquei a pasta criada nome do arquivo criado-->
+    <!-- Chamei o atributo  REL="stylesheet" pois estamos dizendo que é um arquivo de estilo-->
+
+</head>
+
+<body>    
+    
+    <div id="div1" class="div1"> <!-- Colocando atributo de identificação ID="" e CLASS=""-->
+        <div>
+            <h1>Meu titulo 1</h1>
+        </div>
+    </div>
+
+    <div id="div2" class="div2">
+        <div>
+            <h1>Meu titulo 2</h1>
+        </div>
+    </div>
+
+    <div id="div3" class="div3">
+        <h1>Meu titulo 3</h1>
+    </div>
+    <!-- O ideal para trabalhar com Java é usar somente class="" -->
+
+    <div class="menu"> <!-- Criado um atributo de classe chamado: menu -->
+        <a href="">Home/</a> <!-- Criando menu -->
+        <a href="">Produtos/</a>
+        <a href="">Sobre/</a>
+        <a href="">Contato/</a>
+        <a href="">Galeria/</a>
+    </div>
+
+    <div class="artigo">
+        <h1>Meu titulo</h1></br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad earum similique quo voluptatem maiores est excepturi iure iusto! Error, natus! Eligendi reiciendis fugit incidunt aperiam alias velit nihil maxime?</p>
+    </div>
+
+    <div class="artigo">
+        <h1>Meu titulo</h1></br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad earum similique quo voluptatem maiores est excepturi iure iusto! Error, natus! Eligendi reiciendis fugit incidunt aperiam alias velit nihil maxime?</p>
+    </div>
+
+    <div class="artigo">
+        <h1>Meu titulo</h1></br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad earum similique quo voluptatem maiores est excepturi iure iusto! Error, natus! Eligendi reiciendis fugit incidunt aperiam alias velit nihil maxime?</p>
+    </div>
+
+    <div class="letterspacing">
+        <p>Vamos para cima e avante!<br/>Olá mundo!</p>
+    </div>
+
+    <ul class="lista"> <!-- Criando Listas não ordenadas (Bolinhas) -->
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li class="item3">Produto 3</li>
+        <li>Produto 4</li>
+        <!-- As <li> </li> definem um item de uma lista -->
+    </ul>
+
+    <br/>
+
+    <ol> <!-- Criando listas ordenadas (Números)-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>      
+    </ol>
+
+    <br/>
+
+    <p class="tipo1">Conteúdo</p>
+    <a class="link_ tipo1" target="_blank" href="https://www.google.com">Meu link</a>
+    
+    <div id="pai"> <!-- Flout (Flutuador)-->
+        <div class="child">Flout 1 Filha 1</div>
+        <div class="child">Flout 2 Filha 2</div>
+        <div class="child">Flout 3 Filha 3</div>
+        <div class="child">Flout 4 Filha 4</div>
+        <div class="clear"></div>        
+    </div>
+
+    <div id="pai"> <!-- Flout (Flutuador)-->
+        <div class="child">Flout 1 Filho 1</div>
+        <div class="child">Flout 2 Filho 2</div>
+        <div class="child">Flout 3 Filho 3</div>
+        <div class="child">Flout 4 Filho 4</div>
+        <div class="clear"></div>        
+    </div>
+
+    <div class="box"> <!-- Aplicando overflow (Transbordo-Rolagem)-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error laudantium iste, pariatur ratione assumenda, quas voluptate cumque nostrum eaque beatae, facere itaque. Nulla temporibus quam at voluptates magni. Soluta.</p>
+    </div>
+
+    <br/>
+
+    <div class="caixa"> <!-- Aplicando Valores Auto - Herdar - Inicial (Auto,inherit e initial) -->
+        <span>Olá Mundo!</span>
+    </div>
+
+    <br />
+
+    <a attr="google-dankcode" href="https://www.google.com" target="_blank">Ir para o site do Google</a>    
+    <!-- Manipulando elementos no css via atributos attr -->
+
+    <table class="table1"> <!-- Tabela -->
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+        </tr>
+        <tr>
+            <td>Maurício</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <div class="menu-fixed"></div> <!-- Menu Fixado -->
+    <div class="box"></div>
+
+    <br />
+
+    <!-- Manipulando Background -->
+
+    <div class="bg"></div>
+
+    <br />
+
+    <div class="bg1"></div>    
+
+    <div class="caixa1"></div>
+
+    <div class="caixa2">
+        <div class="item4">
+            <img src="https://cdn-icons-png.flaticon.com/512/65/65381.png" />
+            <p>Aqui é o meu texto</p>
+        </div>
+        <div class="item4">
+            <img src="https://cdn-icons-png.flaticon.com/512/65/65381.png" />
+            <p>Aqui é o meu texto</p>
+        </div>
+        <div class="item4 last">
+            <img src="https://cdn-icons-png.flaticon.com/512/65/65381.png" />
+            <p>Aqui é o meu texto</p>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="pseudo1"></div>
+    <div class="pseudo2"></div>
+    <div class="pseudo3"></div>
+    <!-- Pseudos classes no css -->
+
+    <br />
+
+    <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+    <!-- Atacando (Estilizando) Intem a item ao inves da classe toda-->
+
+    <br />
+
+    <div class="parent">
+        <div class="parente"></div>
+        <div class="parente"></div>
+        <div class="parente"></div>
+        <div class="parente"></div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*Usamos este comando *{} para resetar o espaçamento padrão dos navegadores*/
+
+/*body{
+    background-color: black;
+}*/
+
+html, body{
+    height: 100%;
+}
+
+h1{
+    color: red;
+}
+
+#div2 h1{ 
+    color: rgb(121, 214, 28);
+}
+/* Usamos o #div para identificar o id=""*/
+
+.div3 h1{
+    color: blue;
+}
+/* Usamos o .div para identificar o class=""*/
+
+.menu {
+    width: 900px; /*Largura*/
+    background-color: rgb(245, 112, 112); /*Cor de fundo*/
+    margin: 30px auto; /*Para centralizar no meio, coloquei 30px para não ficar colado no topo*/
+    /*margin-left: 10px; Esquerda*/
+    /*margin-right: 10px; Direita*/
+    /*margin-top: 10px; De cima*/
+    /*margin-bottom: 10px; De baixo*/
+    text-align: center; /*Centraliza os links dentro o background*/
+}
+
+.menu > a{
+    color: darkgreen;
+    font-size: 20px;
+    margin: 10px; /*Margem entre os links*/
+    text-decoration: none; /*Para tirar o risco em baixo*/
+}
+
+.artigo{
+    width: 100%; /*Largura e no lugar do px1280 posso colocar AUTO ou colocar valor em % para deixar responsivo*/
+    max-width: 100%; /*Largura máxima*/
+    background-color: brown;
+    padding: 40px; /*Espaçamento interno, topo, baixo, direita e esquerda*/
+    margin: 40px auto;
+    text-align: center;
+}
+
+.artigo h1{
+    color: blue;
+    font-size: 200%;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: small-caps;
+    /*Consultar fontes no site da w3scholl*/
+}
+
+.artigo p{
+    font-size: 17px;
+    color: rgb(187, 180, 180);
+    font-family: 'tahoma';
+    font-style: normal;
+    font-weight: bold; /*Italico*/
+    margin-top: 12px;
+    line-height: 40px; /*Espaçamento entre linhas*/
+}
+
+.letterspacing p{
+    letter-spacing: 10px;
+    font-weight: bold;
+    line-height: 40px; /*Espaçamento entre os paragráfos digitados na mesma linha de código no html*/
+}
+
+.lista{
+    list-style-position: inside; /*Posição dentro do box (Bolinhas)*/
+    list-style-type: disc;
+}
+
+.lista li{
+    color: darkred;
+    font-size: 18px;
+    margin-top: 10px; /*Espaçamento entre os itens da lista*/
+
+}
+
+.lista .item3{
+    color: blue;
+    font-weight: bold; /*Negrito*/
+} /*Aqui ataquei especificamente a classe da lista*/
+
+ol{    
+    list-style-position: inside; /*Posição dentro do box (Números)*/   
+}
+
+ol > li{
+    color: red;
+}
+/*Usa o sinal maior que > para atacar especificamente os itens da lista*/
+
+.tipo1{
+    color: rgb(223, 30, 23);
+}
+
+.link_{
+    font-size: 30px;
+    color: rgb(28, 42, 236);
+}
+
+.clear{
+    clear: both;
+} /*Estilo "clear: both; quer dizer limpar as flutuações para os dois lados*/
+
+#pai{
+    width: 1280px;
+    padding: 20px 0;
+    margin: 20px auto; /*Separa a margem entre os filhos*/
+    background: blue;
+}
+
+.child{
+    /*display: inline-block;
+    margin-right: -4px;*/
+    box-sizing: border-box;
+    width: 640px;
+    height: 300px;
+    background: red;
+    float: left; /*Float substitue o display: inline-block;*/
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0;
+    border: 1px solid black;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background: gray;
+    /*overflow: scroll;*/
+    overflow-x: auto;
+}
+
+.box p{
+    width: 500px;
+}
+
+.caixa{
+    width: 400px;
+    height: 400px;
+    background: gray;
+} /*Pai (div)*/
+
+.caixa span{
+    display: inline-block;
+    width: inherit; /*Herda do pai*/
+    height: inherit; /*Herda do pai*/
+    background: inherit;
+}
+
+a[attr*="goo"]{
+    background-color: yellow;
+}
+/*Ir no w3scholl e lá tem todos os seletores CSS Attr Selectores*/
+
+.table1{
+    width: 900px;
+    border-collapse: collapse; /*Virar uma borda só*/
+    margin: 0 auto;
+}
+
+table tr td{
+    background-color: rgb(200, 200, 200);
+    height: 300px;
+    vertical-align: bottom;
+    border: 3px solid black;
+}
+
+.menu-fixed{
+    /*position: fixed;*/
+    width: 100%;
+    height: 200px;
+    background: #069;    
+}
+/*Menu fixado*/
+
+.box{
+    width: 100%;
+    height: 1400px;
+    background: green;
+}
+
+.bg{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: red;
+    background-image: url('../Imagem\ para\ aula.jpg'); /*url(abre aspas simples' colocando 2 pontos e barra/ para pegar imagens de outro arquivo*/
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.bg1{
+    width: 100%;
+    margin: 0 auto;
+    height: 30vh;
+    background-image: url('../sunset.jpg');
+    background-color: red;
+    background-size: cover;
+    background-attachment: fixed; /*Efeito Paralax*/
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+}
+
+.caixa1{
+    width: 900px;
+    height: 2000px;
+    background-color: rgb(100, 100, 100);
+}
+
+.caixa2{
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+
+}
+
+.item4{
+    width: 33.3%;
+    margin-right: -4px;
+    display: inline-block;
+}
+
+.item4 img{
+    width: 30%;
+}
+
+.last{
+    margin-right: 0;
+}
+
+.pseudo1, .pseudo2, .pseudo3{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 300px;
+    background-color: #ccc;
+}
+
+.pseudo2{
+    background-color: rgb(98, 98, 98);
+}
+
+.pseudo3{
+    background-color: rgb(50, 50, 50);
+}
+
+
+.pseudo1:hover{
+    background-color: blue;
+}
+/*:hover é para quando passar o mouse em cima ficar na cor descrita*/
+
+.pseudo2:hover{
+    background-color: rgb(255, 0, 21);
+}
+/*:hover é para quando passar o mouse em cima ficar na cor descrita*/
+
+.pseudo3:hover{
+    background-color: rgb(255, 230, 0);
+}
+/*:hover é para quando passar o mouse em cima ficar na cor descrita*/
+
+.pseudo1:hover,.pseudo2,.pseudo3{
+    vertical-align: top;
+}
+/*Ir no w3scholl em Pseudo-class*/
+
+ul{
+    list-style-position: inside;
+}
+
+ul li:nth-last-of-type(2){
+    color: red;
+}
+/*Atacando (Estilizando) Intem a item ao inves da classe toda usamos: :nth-last-of-type()*/
+
+.parent{
+    width: 100%;
+    margin: 90px 0;
+    text-align: center;
+}
+
+.parente{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 20px 0;
+}
+
+
+
+
+

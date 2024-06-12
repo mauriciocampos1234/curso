@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <!--Técnicas básicas para SEO-->
+        <meta name="description" content="Exemplo de descrição para o meu site">
+        <meta name="keywords" content="palavras-chaves,separadas,por,virgula">
+        <meta name="author" content="Maurício Campos">
+        <title>Minha LandPage 2</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+<body>
+    
+    <header><!--Começo do cabeçalho-->
+        <div class="container"><!--Inicio do recipiente(Contexto) do cabeçalho-->
+            <div><div class="logomarca-1"></div></div><!--Logomarca da esquerda-->
+            <div><div class="logomarca-2"></div></div><!--Logomarca da direita-->
+            <div class="clear"></div><!--Clear(Resetar Flutuações para trabalhar com outras) pois irá trabalhar com flutuação-->
+        </div><!--Fim do recipiente(Contexto) do cabeçalho-->
+    </header><!--Fim do cabeçalho-->
+
+    <section class="cover-form"> <!--Abertura da primeira sessão-->
+        <div class="container bg"> <!--Começo Imagem principal do recipiente-->
+            <div class="form-container"><!--Inicio do formulário-->
+                <h2>PODE ACREDITAR, POR DENTRO AINDA É MAIS BONITO!</h2>
+                <form action="">
+                    <div class="form-wraper"><!--*INICIO* Embrulhando todos os elementos-->
+                        <p>*Nome:</p>
+                        <input type="text" name="Nome" placeholder="Seu nome Completo" required>
+                    </div><!--Embrulhando todos os elementos-->
+                    <div class="form-wraper"><!--Embrulhando todos os elementos-->
+                        <p>*E-mail:</p>
+                        <input type="text" name="E-mail" placeholder="Seu melhor e-mail" required>
+                    </div><!--Embrulhando todos os elementos-->
+                    <div class="form-wraper"><!--Embrulhando todos os elementos-->
+                        <p>*Whatsapp:</p>
+                        <input type="text" name="Whatsapp" placeholder="Seu Whatsapp" required>
+                    </div><!--*FIM* Embrulhando todos os elementos-->
+                    <div class="form-wraper"> <!--*INICIO* botão enviar-->
+                        <input type="submit" name="acao" value="Enviar">
+                    </div><!--*FIM* botão enviar-->
+                    <div class="form-wraper">
+                        <p>* Campos obrigatórios</p>
+                    </div>
+                </form>
+            </div> <!--Fim do formulário-->
+            <!--<div class="clear"></div>-->
+        </div> <!--Fim Imagem principal do recipiente-->
+    </section><!--Fechamento da primeira sessão-->
+
+    <section class="chamada"><!--Inicio da segunda sessão-->
+        <div class="container"> <!--*INICIO* Container: Para as box ficar alinhadas-->
+        <h2>Minha chamada para o empreendimento</h2>
+        <p>Alguma mensagem para a chamada</p>
+        </div> <!--*FIM* Container: Para as box ficar alinhadas-->
+    </section><!--Fim da segunda sessão-->
+
+    <section class="mosaico"> <!--Inicio da sessão mosaico-->
+        <div class="container"><!--*INICIO* Container: Para as box ficar alinhadas-->
+            
+            <div class="flex-mosaico"><!--Inicio do primeiro mosaico-->
+                <div style="background-image: url('imagens/mosaico1.jpg');" class="item-1-mosaico"></div> <!--Inicio e fim na mesma linha do item 1-->
+                <div class="item-2-mosaico"> <!--Inicio item 2-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos atque quae id quos, nam praesentium laborum molestias iste, fugiat dicta soluta harum laboriosam accusantium repudiandae totam?</p>
+                </div><!--Fim item 2-->
+            </div> <!--Fim do primeiro mosaico-->
+                
+                <div class="flex-mosaico"><!--Inicio do segundo mosaico-->
+                    <div style="background-image: url('imagens/mosaico2.jpg');order:2;" class="item-1-mosaico"></div> <!--Inicio e fim na mesma linha do item 1-->
+                    <div class="item-2-mosaico" style="order:1;"> <!--Inicio item 2-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos atque quae id quos, nam praesentium laborum molestias iste, fugiat dicta soluta harum laboriosam accusantium repudiandae totam?</p>
+                    </div><!--Fim item 2-->
+                </div> <!--Fim do segundo mosaico-->
+
+                    <div class="flex-mosaico"><!--Inicio do terceiro mosaico-->
+                        <div style="background-image: url('imagens/mosaico3.jpg');" class="item-1-mosaico"></div> <!--Inicio e fim na mesma linha do item 1-->
+                        <div class="item-2-mosaico"> <!--Inicio item 2-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos atque quae id quos, nam praesentium laborum molestias iste, fugiat dicta soluta harum laboriosam accusantium repudiandae totam?</p>
+                        </div><!--Fim item 2-->
+                    </div> <!--Fim do terceiro mosaico-->
+                        
+                        <div class="flex-mosaico"><!--Inicio do quarto mosaico-->
+                            <div style="background-image: url('imagens/mosaico4.jpg');order:2;" class="item-1-mosaico"></div> <!--Inicio e fim na mesma linha do item 1-->
+                            <div class="item-2-mosaico" style="order:1;"> <!--Inicio item 2-->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos atque quae id quos, nam praesentium laborum molestias iste, fugiat dicta soluta harum laboriosam accusantium repudiandae totam?</p>
+                            </div><!--Fim item 2-->
+                        </div> <!--Fim do quarto mosaico-->
+        </div> <!--*FIM* Container: Para as box ficar alinhadas-->
+    </section> <!--Fim da sessão mosaico-->
+
+    <footer>
+        <img src="imagens/logo1.png" alt=""/>
+        <p>Todos os direitos reservados</p>
+        <p>Contato: (12) 9-8182-7278</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner e CTA</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section.bg{
+            background-image: url(binary-code.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        a.cta{
+            width: 95%;
+            max-width: 600px;
+            text-align: center;
+            background: #e7426b;
+            display: inline-block;
+            padding: 8px 20px;            
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="bg">        
+        <a class="cta" href="https://google.com">Cadastrar!</a>        
+    </section>
+</body>
+</html>

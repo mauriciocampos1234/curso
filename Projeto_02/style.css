@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/*DIVS GERAIS*/
+.container{
+    width: 100%; /*Largura*/
+    max-width: 1200px; /*Máximo de largura*/
+    margin: 0 auto; /*Centralizar a margem*/
+}
+
+.clear{
+    clear: both; /*Já para limpar a flutuação*/
+}
+
+header{
+    background-color: rgb(220, 220, 220);
+    padding: 10px 2% 25px 2%; /*Espaçamento interno aonde irá ficar as logomarcas*/    
+}
+
+.logomarca-1{
+    float: left; /*Logomarca 1 vai flutuar p/ esquerda*/
+    width: 150px; /*Largura*/
+    height: 60px; /*Altura*/
+    background-image: url('../Projeto_02/imagens/logo1.png');
+    background-size: 100% auto;
+    background-position: center; /*centralizar dentro do cabeçalho*/
+    background-repeat: no-repeat; /*Para não repetir a imagem*/
+}
+
+.logomarca-2{
+    float: right; /*Logomarca 2 vai flutuar p/ direita*/
+    width: 160px; /*Largura*/
+    height: 60px; /*Altura*/
+    background-image: url('../Projeto_02/imagens/logo2.png');
+    background-size: 100% auto;
+    background-position: center; /*centralizar dentro do cabeçalho*/
+    background-repeat: no-repeat; /*Para não repetir a imagem*/
+}
+
+section.cover-form{
+    width: 100%;
+    /*padding: 0 2%;*/
+}
+
+.bg{
+    position: relative;
+    height: 560px; /*Altura*/
+    background-image: url('../Projeto_02/imagens/bg-form.jpg');
+    background-position: center; /*No centro*/
+    background-size: cover; /*Foto 1 Cobrindo todo para inserir o formulário nela*/
+}
+
+.form-container{
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
+    /*float: right; /*Flutuar para a direita*/
+    /*margin-right: 40px; /*Margem a direita*/
+    width: 400px; /*Largura*/
+    height: 105%; /*Altura*/       
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180); /*Sobreamento na margem*/
+    background-color: white;
+}
+
+.form-container h2{
+    font-weight: normal; /*Tirar o negrito pois todos h1 e h2 por padrão vem com negrito*/
+    padding: 25px 15px; /*Espaçamento interno*/
+    color: black;
+    font-size: 18px;
+    background-color: rgb(210, 210, 210);
+}
+
+.form-container form{
+    margin-top: 20px; /*Margem do topo*/
+    padding: 15px; /*Espaçamento interno*/    
+}
+
+.form-container form p{
+    font-size: 14px; /*Tamanho da fonte do paragráfro*/
+    color: #525252;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}/*A margem do topo não foi aplicada no primeiro input e sim nas demais*/
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}/*Ultimo filho*/
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px; /*Linha da altura*/
+    padding-left: 10px; /*Espaçamento interno à esquerda*/
+}
+
+.form-container form input[type=submit]{
+    background-color: #033C50;
+    text-transform: uppercase; /*Para ficar em letra maiuscula*/
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer; /*Para a seta virar dedinho para demonstrar que é clicável*/
+    border: 0; /*Aplica para tirar o por padrão que vem com borda*/
+}
+
+section.chamada{
+    z-index: 1;        
+    width: 100%;
+    text-align: center; /*Alinhamento do texto do titulo h2*/
+        
+}
+
+section.chamada .container{
+    padding: 50px 0;
+    background-color: #29526d;
+}
+
+/*.icone-seta{
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../Projeto_01/images/arrow.png');
+}*/
+
+section.chamada h2{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal; /*Tirar o negrito pois todos h1 e h2 por padrão vem com negrito*/
+}
+
+section.chamada p{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.flex-mosaico{
+    display: flex;/*esse elemento se torna um flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas*/
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover; /*Cobrindo*/
+    width: 60%;
+}
+
+.item-2-mosaico{
+    background-color: #3a7ba7;
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico p{
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img{
+    width: 120px;
+}
+
+footer p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 8px;
+}
+
+/*Aplicando midiaquery (Responsivo mobile)*/
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+    .logomarca-1,.logomarca-2{
+        margin-top: 10px; /*Margin do topo*/        
+        display: inline-block;
+        float: none; /*Nenhuma Flutuação*/
+    }
+}
+

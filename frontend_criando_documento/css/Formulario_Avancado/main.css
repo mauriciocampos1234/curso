@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+form{
+    width: 96%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form fieldset{
+    padding: 20px 40px;
+    border: 1px solid black;
+}
+
+form legend{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(130, 130, 130);
+}
+
+form input[type=text]{
+    display: inline-block;
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 13px;
+}
+
+form input[type=text]:form textarea:focus{
+    outline: 0;
+}
+/*focus no textarea para aparecer a frase e quando o usuário digitar ela aparece*/
+
+form select{
+    width: calc(80% + 26px); /*Função calc() aonde misturamos porcentagens e pixeus*/
+    margin-top: 30px;
+    padding: 10px 13px;
+    display: inline-block;
+}
+
+form h2{
+    margin-top: 20px;
+}
+
+.input{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.input span{
+    margin-left: 13px;
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+}
+
+form textarea{
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    width: 80%;
+    height: 140px;
+    padding: 10px 13px;
+    resize: none;
+}
+
+form input[type=submit]{
+    margin-top: 30px;
+    border: 0;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer; /*Para aparecer a mãozinha na hora de passar o mouse*/
+    border: 2px solid rgb(130, 130, 130);
+    color: white;
+    background-color: rgb(140, 140, 140);
+}
+/*Usá-se o colchete[] para buscar o type=
